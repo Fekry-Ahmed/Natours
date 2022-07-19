@@ -64,6 +64,41 @@ body {
     animation: moveInRight 1s ease-out;
     -webkit-animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s; }
+  .heading-secondary:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: skewY(2deg) skewX(10deg) scale(1.1); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-center-text {
+  text-align: center; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   padding: 1.5rem 4rem;
@@ -105,6 +140,52 @@ body {
 .btn--animated {
   animation: animationBtn 0.4s 0.75s ease-out;
   animation-fill-mode: backwards; }
+
+.btn-text:link,
+.btn-text:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #55c57a;
+  padding: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: 0.3s; }
+  .btn-text:link:hover,
+  .btn-text:visited:hover {
+    color: #fff;
+    background-color: #55c57a;
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn-text:link:active,
+  .btn-text:visited:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    z-index: 5;
+    width: 55%;
+    position: absolute;
+    box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.4);
+    outline-offset: 2rem;
+    border-radius: 2px;
+    transition: all 0.2s; }
+    .composition__photo--1 {
+      top: -2rem;
+      left: 0; }
+    .composition__photo--2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--3 {
+      top: 10rem;
+      left: 20%; }
+    .composition__photo:hover {
+      z-index: 10;
+      transform: scale(1.05);
+      outline: 1.5rem solid #55c57a; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .row {
   max-width: 114rem;
@@ -151,3 +232,8 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.section-about {
+  padding: 25rem 0;
+  margin-top: -20rem;
+  background-color: #f7f7f7; }

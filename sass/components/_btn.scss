@@ -52,3 +52,26 @@
         animation-fill-mode: backwards;
     }
 }
+
+.btn-text:link,
+.btn-text:visited {
+    display: inline-block;
+    font-size: $default-font-size;
+    color: $color-primary;
+    padding: 3px;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: 0.3s;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-primary;
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+}
