@@ -445,6 +445,43 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.footer {
+  padding: 10rem 0;
+  background-color: #333;
+  color: #f7f7f7;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem; }
+  .footer__navigation {
+    padding-top: 2rem;
+    border-top: 1px solid #777;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    background-color: #333;
+    display: inline-block;
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.3) rotate(5deg); }
+  .footer__copyright {
+    width: 80%;
+    float: right;
+    padding-top: 2rem;
+    border-top: 1px solid #777; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
