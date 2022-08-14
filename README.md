@@ -2,8 +2,6 @@
   <br>
   <a href="https://fekry-ahmed.github.io/Natours/"><img src="img/logo-green-2x.png" alt="Natours" width="200"></a>
   <br>
-  Natours
-  <br>
 </h1>
 
 
