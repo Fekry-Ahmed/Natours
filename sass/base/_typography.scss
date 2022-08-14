@@ -17,6 +17,11 @@ body {
         letter-spacing: 3.5rem;
         animation: moveInLeft 1s ease-out;
         -webkit-animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
 
     &--sub {
@@ -26,6 +31,10 @@ body {
         letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
         -webkit-animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
+        }
     }
 }
 
@@ -38,11 +47,20 @@ body {
         $color-primary-light,
         $color-primary-dark
     );
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-transform: uppercase;
     font-weight: 700;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
