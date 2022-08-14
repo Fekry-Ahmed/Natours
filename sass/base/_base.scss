@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @include respond(tab-land) {
         font-size: 56.25%;
@@ -32,4 +33,9 @@ body {
     @include respond(tab-port) {
         padding: 0;
     }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }
